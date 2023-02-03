@@ -1534,7 +1534,7 @@ body {
     color: #2D3440;
 }
 
-.inner-header__breadcrumbs-link_active {
+.inner-header__breadcrumbs li:last-child {
     border-bottom: 1px black solid;
 }
 

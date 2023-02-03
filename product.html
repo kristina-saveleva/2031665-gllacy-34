@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="images/main-logo.svg" alt="Логотип Gllacy Shop.">
+                        </a>
+                    </div>
+                    <ul class="header__menu header__menu-catalog">
+                        <li class="header__menu-item header__menu-item_active">
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#">О компании</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__information header__information-catalog">
+                    <span>
+                        <a class="header__information-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                    </span>
+                    <ul class="icon icon__catalog">
+                        <li class="icon__item icon__item-catalog">
+                            <a class="icon__link icon__search" href="#">
+                                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.66329 6.18799C1.66329 3.61066 3.75263 1.52132 6.32996 1.52132C8.90729 1.52132 10.9966 3.61066 10.9966 6.18799C10.9966 7.44526 10.4994 8.58641 9.69093 9.42554C9.66808 9.44309 9.64612 9.46234 9.62519 9.48326C9.60427 9.50418 9.58503 9.52614 9.56748 9.54898C8.72835 10.3575 7.58722 10.8547 6.32996 10.8547C3.75263 10.8547 1.66329 8.76532 1.66329 6.18799ZM10.0751 10.8759C9.04862 11.697 7.74662 12.188 6.32996 12.188C3.01625 12.188 0.329956 9.5017 0.329956 6.18799C0.329956 2.87428 3.01625 0.187988 6.32996 0.187988C9.64367 0.187988 12.33 2.87428 12.33 6.18799C12.33 7.60467 11.839 8.90668 11.0179 9.93313L13.468 12.3833C13.7284 12.6436 13.7284 13.0657 13.468 13.3261C13.2077 13.5864 12.7855 13.5864 12.5252 13.3261L10.0751 10.8759Z"
+                                        fill="#2D3440" />
+                                </svg>
+                                <span class="visually-hidden"> Поиск. </span>
+                            </a>
+                            <div class="popover popover-cart popover-search">
+                                <div class="popover-content popover-content-search">
+                                    <form action="https://echo.htmlacademy.ru/">
+                                        <label for="site-search"></label>
+                                        <input class="search search-input" id="site-search" type="search" name="search"
+                                            placeholder="Поиск по сайту">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icon__item icon__item-catalog">
+                            <a class="icon__link" href="#">
+                                <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z">
+                                    </path>
+                                </svg>
+                                <span> Вход </span>
+                            </a>
+                            <div class="popover popover-cart popover-entry">
+                                <div class="popover-content">
+                                    <h2 class="popover-title">Личный кабинет</h2>
+                                    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                                        <p class="field-group field-group-entry">
+                                            <label class="visually-hidden" for="email"></label>
+                                            <input class="auth-form-field field" type="email" id="email" name="email"
+                                                placeholder="email@example.com">
+                                        </p>
+                                        <p class="field-group field-group-entry">
+                                            <label class="visually-hidden" for="auth-password">Пароль.</label>
+                                            <input class="auth-form-field field" type="password" id="auth-password"
+                                                name="auth-password" placeholder="·····">
+                                        </p>
+                                        <div class="auth-form__container">
+                                            <button class="button pink-button auth-form-button"
+                                                type="submit">Войти</button>
+                                            <p class="field-group auth-form-user-options">
+                                                <label class="auth-form-checkbox control">
+                                                </label>
+                                                <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                                                <a class="auth-form-recovery" href="#">Регистрация</a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icon__item icon__item-catalog">
+                            <a class="icon__link" href="#">
+                                <svg aria-hidden="true" focusable="false" fill="currentColor" viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z">
+                                    </path>
+                                </svg>
+                                <span class="icon__link-count"> 2 </span>
+                                <span>товара</span>
+                            </a>
+                            <div class="popover popover-cart">
+                                <div class="popover-content">
+                                    <h2 class="popover-title">Корзина</h2>
+
+                                    <ul class="cart-items-list">
+                                        <li class="cart-item">
+                                            <img src="images/catalog/raspberry.jpg" alt="raspberry.">
+                                            <div class="card-item__container">
+                                                <p class="cart-item-title">Малинка</p>
+                                                <p class="cart-item-subtitle">1 кг х 310 ₽</p>
+                                            </div>
+                                            <p class="cart-item-price">310 ₽</p>
+                                            <button class="close-button"></button>
+                                        </li>
+                                        <li class="cart-item">
+                                            <img src="images/catalog/bubble-gum.jpg" alt="buble-gum.">
+                                            <div class="card-item__container">
+                                                <p class="cart-item-title">Бабл-гам</p>
+                                                <p class="cart-item-subtitle">1,5 кг х 320 ₽</p>
+                                            </div>
+                                            <p class="cart-item-price">480 ₽</p>
+                                            <button class="close-button"></button>
+                                        </li>
+                                    </ul>
+                                    <div class="popover-content__container">
+                                        <button class="button pink-button" type="submit">
+                                            <span>Оформить заказ</span>
+                                        </button>
+                                        <p class="total-price">Итого: 790 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popover visually-hidden popover-cart-empty">
+                                <div class="popover-content popover-content-empty">
+                                    <h2 class="popover-title">Ваша корзина пока пуста</h2>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <main class="main-catalog">
+                <div class="inner-header">
+                    <h2 class="inner-header__title">Сливочное мороженое</h2>
+                    <ul class="inner-header__breadcrumbs">
+                        <li class="inner-header__breadcrumbs-item">
+                            <a class="inner-header__breadcrumbs-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="inner-header__breadcrumbs-item">
+                            <a class="inner-header__breadcrumbs-link inner-header__breadcrumbs-link_active"
+                                href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="inner-header__breadcrumbs-item">
+                            <a
+                                class="inner-header__breadcrumbs-link inner-header__breadcrumbs-link_active">Мороженое</a>
+                        </li>
+                    </ul>
+                </div>
+                <section class="ice-cream">
+                    <div class="your-class">
+                        <div>your content</div>
+                        <div>your content</div>
+                        <div>your content</div>
+                    </div>
+                </section>
+            </main>
+    </body>
+    <script src="components/createCards.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</html>
