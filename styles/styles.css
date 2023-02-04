@@ -252,8 +252,6 @@ body {
 
 .slider__ice {
     margin-bottom: -19px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
 }
@@ -339,6 +337,7 @@ body {
     -ms-flex-align: baseline;
     align-items: baseline;
     margin-top: 5px;
+    float: right;
 }
 
 .slider__social-icons {
