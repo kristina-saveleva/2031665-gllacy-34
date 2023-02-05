@@ -99,7 +99,8 @@
 }
 .slick-initialized .slick-slide
 {
-    display: block;
+    display: flex;
+    justify-content: space-around;
 }
 .slick-loading .slick-slide
 {

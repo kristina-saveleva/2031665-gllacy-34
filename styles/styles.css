@@ -272,6 +272,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
 }
 
 .slider__information-container {
@@ -295,31 +296,8 @@ body {
     margin-bottom: 46px;
 }
 
-.slider__ice-container {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 150px;
-    margin-top: auto;
-    margin-left: 69px;
-    margin-bottom: auto;
-}
-
 .slider-image {
     padding-right: 49px;
-}
-
-.slider__ice-container .slider__information:before {
-    content: "";
-    position: absolute;
-    width: 98px;
-    height: 98px;
-    margin-left: -5px;
-    background-color: #FFCBD8;
-    border-radius: 50%;
-    z-index: -1;
-    top: 28px;
 }
 
 .slider__ice-container .slider__information-container {
@@ -2341,4 +2319,104 @@ body {
 
 .catalog-products__container input:checked~.svg1 {
     display: none;
+}
+
+.mgo-widget-call_pulse {
+    height: 298px;
+    width: 298px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    left: -417px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: .6;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+.mgo-widget-call_pulse:after,
+.mgo-widget-call_pulse:before {
+    content: '';
+    position: absolute;
+    left: -17px;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 100%;
+    -webkit-animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+}
+.mgo-widget-call_pulse:before {
+    margin: auto 0 auto -22px;
+    height: 370px;
+    width: 370px;
+    opacity: .5;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+.mgo-widget-call_pulse:after {
+    margin: auto 0 auto -42.5px;
+    height: 430px;
+    width: 430px;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    opacity: .25;
+}
+
+@-webkit-keyframes shake {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-2px);
+  }
+  50% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-2px);
+  }
+}
+
+@keyframes shake {
+  0% {
+     transform: translateX(0);
+  }
+  25% {
+     transform: translateX(-2px);
+  }
+  50% {
+     transform: translateX(0);
+  }
+  100% {
+     transform: translateX(-2px);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
