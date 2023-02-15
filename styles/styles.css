@@ -269,10 +269,11 @@ body {
 }
 
 .slider__information {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
 }
 
 .slider__information-container {
@@ -298,6 +299,7 @@ body {
 
 .slider-image {
     padding-right: 49px;
+    display: flex;
 }
 
 .slider__ice-container .slider__information-container {
@@ -2363,6 +2365,26 @@ body {
     -webkit-animation-delay: .2s;
     animation-delay: .2s;
     opacity: .25;
+}
+
+/* .ice-cream__image{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ice-cream__image-box{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+} */
+
+.slick-initialized .ice-cream__image-mains {
+    display: block;
 }
 
 @-webkit-keyframes shake {

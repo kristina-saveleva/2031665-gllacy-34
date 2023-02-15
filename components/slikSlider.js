@@ -9,13 +9,23 @@ $(function () {
     });
 });
 
+
+
+
 $(function () {
-    $('.ice-cream__image').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
+    $('.ice-cream__image-main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
         fade: true,
-        cssEase: 'linear',
-        arrows: false
+        asNavFor: '.ice-cream__image'
     });
-});
+    $('.ice-cream__image').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.ice-cream__image-main',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+})
