@@ -2367,7 +2367,7 @@ body {
     opacity: .25;
 }
 
-/* .ice-cream__image{
+.ice-cream__main-image{
     position: relative;
     top: 0;
     left: 0;
@@ -2377,14 +2377,15 @@ body {
 }
 
 .ice-cream__image-box{
-    display: none;
+
     float: left;
     height: 100%;
     min-height: 1px;
-} */
+    opacity: .3;
+}
 
-.slick-initialized .ice-cream__image-mains {
-    display: block;
+.ice-cream__image-box.slick-current{
+    opacity: 1;
 }
 
 @-webkit-keyframes shake {

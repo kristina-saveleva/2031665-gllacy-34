@@ -9,21 +9,18 @@ $(function () {
     });
 });
 
-
-
-
 $(function () {
-    $('.ice-cream__image-main').slick({
+    $('.ice-cream__main-image').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: true,
-        asNavFor: '.ice-cream__image'
+        asNavFor: '.ice-cream__main-image'
     });
-    $('.ice-cream__image').slick({
+    $('.ice-cream__main-image').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.ice-cream__image-main',
+        asNavFor: '.ice-cream__main-image',
         dots: true,
         centerMode: true,
         focusOnSelect: true

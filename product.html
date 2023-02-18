@@ -166,45 +166,39 @@
                 </div>
                 <section class="ice-cream">
 
-                    <div class="ice-cream__image-main">
-                        <div class="ice-cream__image-boxs">
-                            <img src="images/catalog/chocolate.jpg" alt="ice-cream">
-                        </div>
-                        <div class="ice-cream__image-boxs">
-                            <img src="images/catalog/nut.jpg" alt="ice-cream">
-                        </div>
-                        <div class="ice-cream__image-boxs">
-                            <img src="images/catalog/creme-brulee.jpg" alt="ice-cream">
-                        </div>
-                    </div>
-                    <ul class="ice-cream__image">
-                        <li class="ice-cream__image-box">
-                            <img src="images/catalog/chocolate.jpg" alt="ice-cream">
-                        </li>
-                        <li class="ice-cream__image-box">
-                            <img src="images/catalog/nut.jpg" alt="ice-cream">
-                        </li>
-                        <li class="ice-cream__image-box">
-                            <img src="images/catalog/creme-brulee.jpg" alt="ice-cream">
-                        </li>
-                        <li class="ice-cream__image-box">
-                            <img src="images/catalog/chocolate.jpg" alt="ice-cream">
-                        </li>
-                        <li class="ice-cream__image-box">
-                            <img src="images/catalog/nut.jpg" alt="ice-cream">
-                        </li>
-                        <li class="ice-cream__image-box">
-                            <img src="images/catalog/creme-brulee.jpg" alt="ice-cream">
-                        </li>
-
-                    </ul>
-
                 </section>
+                <template id="product-template">
+                    <section class="ice-cream">
+                        <div class="ice-cream__main-image-wrapper">
+                            <div class="ice-cream__main-image-box">
+                                <img class="ice-cream__main-image ice-cream__main-image1" alt="ice-cream">
+                            </div>
+                            <div class="ice-cream__main-image-box">
+                                <img class="ice-cream__main-image ice-cream__main-image2" alt="ice-cream">
+                            </div>
+                            <div class="ice-cream__main-image-box">
+                                <img class="ice-cream__main-image ice-cream__main-image3" alt="ice-cream">
+                            </div>
+                        </div>
+                        <ul class="ice-cream__image">
+                            <li class="ice-cream__image-box">
+                                <img class="ice-cream__image1" alt="ice-cream">
+                            </li>
+                            <li class="ice-cream__image-box">
+                                <img class="ice-cream__image2" alt="ice-cream">
+                            </li>
+                            <li class="ice-cream__image-box">
+                                <img class="ice-cream__image3" alt="ice-cream">
+                            </li>
+                        </ul>
+                    </section>
+
+                </template>
             </main>
+            <script src="components/createProduct.js"></script>
     </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="components/slikSlider.js"></script>
-
 </html>
