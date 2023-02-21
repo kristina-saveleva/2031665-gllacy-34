@@ -55,7 +55,6 @@ let elemArray = initialImage.filter(function (iceCream) {
 });
 
 let found = elemArray.find(e => e);
-let imagesArr = Object.values(found.images);
 
 function addProductOnPageFromLocalHost(name) {
     fetch("http://localhost:3001/product?name=" + name)
@@ -64,7 +63,7 @@ function addProductOnPageFromLocalHost(name) {
         .catch(
             error => {
                 console.error(error);
-                renderProduct(initialImage);
+                renderProduct(found);
             }
         );
 };
