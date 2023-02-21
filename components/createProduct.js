@@ -1,6 +1,8 @@
-var initialImage = [
+'use strict'
+import {sliderForProduct} from './slikSlider.js'
+let initialImage = [
     {
-        name: "raspberry", subtitle: "Сливочное мороженое с малиновым джемом", price: "310 ₽/кг", images: ["images/catalog/raspberry.png", "images/catalog/pistachio.png", "images/catalog/blueberry.png"]
+        name: "raspberry", subtitle: "Сливочное мороженое с малиновым джемом", price: "310 ₽/кг", images: ["images/product/raspberries1.jpeg","images/product/raspberries2.jpeg","images/product/raspberries3.jpeg"],
     },
     {
         name: "pistachio", subtitle: "Фисташковый пломбир с кусочками шоколада", price: "340 ₽/кг", images: ["images/catalog/pistachio.png", "images/catalog/pistachio.png", "images/catalog/blueberry.png"]
@@ -60,13 +62,13 @@ function addProductOnPageFromLocalHost(name) {
         .catch(
             error => {
                 console.error(error);
-
                 renderProduct(initialImage);
             }
         );
 };
 
 function renderProduct({  }) {
+    console.log('это должно быть первым')
     const productElement = productTemplate.querySelector(".ice-cream__main-image-wrapper").cloneNode(true);
     const productList = productTemplate.querySelector(".ice-cream__image").cloneNode(true);
     productElement.querySelector(".ice-cream__main-image1").src = imagesArr[0];
@@ -77,6 +79,7 @@ function renderProduct({  }) {
     productList.querySelector(".ice-cream__image3").src = imagesArr[2];
     iceCreamImageContainer.prepend(productList);
     iceCreamImageContainer.prepend(productElement);
+    sliderForProduct();
 }
 
 addProductOnPageFromLocalHost(getUrlParam());

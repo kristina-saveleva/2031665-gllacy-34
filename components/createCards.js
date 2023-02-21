@@ -1,3 +1,4 @@
+'use strict'
 const initialCards = [
     {
         name: "Малинка",
@@ -85,10 +86,7 @@ const initialCards = [
     }
 ];
 
-const placesContainer = document.querySelector(".products__catalog");
-const placeTemplate = document.querySelector("#products-template").content;
 const tenCardElements = [];
-
 function addCardsOnPageFromLocalHost() {
     fetch("http://localhost:3001/products")
         .then(response => response.json())
@@ -108,6 +106,8 @@ function renderCards(cards = tenCardElements) {
 }
 
 function renderCard({ name, url, subtitle, price, link }) {
+    const placesContainer = document.querySelector(".products__catalog");
+    const placeTemplate = document.querySelector("#products-list-template").content;
     const placeElement = placeTemplate.querySelector(".catalog-products__card").cloneNode(true);
     let linkUrl = placeElement.querySelector(".catalog-products__card-link");
     placeElement.querySelector(".catalog-products__card-title").textContent = name;

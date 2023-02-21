@@ -9,20 +9,24 @@ $(function () {
     });
 });
 
-$(function () {
-    $('.ice-cream__main-image').slick({
+export function sliderForProduct () {
+    $('.ice-cream__main-image-wrapper').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
+        speed: 500,
+        arrows: false,
         fade: true,
-        asNavFor: '.ice-cream__main-image'
+        asNavFor: '.ice-cream__image'
     });
-    $('.ice-cream__main-image').slick({
-        slidesToShow: 3,
+    $('.ice-cream__image').slick({
+        slidesToShow: 2,
         slidesToScroll: 1,
-        asNavFor: '.ice-cream__main-image',
-        dots: true,
+        speed: 500,
+        asNavFor: '.ice-cream__main-image-wrapper',
+        dots: false,
         centerMode: true,
         focusOnSelect: true
     });
-})
+    console.log("а это вторым")
+};
