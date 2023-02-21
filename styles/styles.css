@@ -2367,22 +2367,32 @@ body {
     opacity: .25;
 }
 
+.ice-cream{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
 .ice-cream__main-image{
     position: relative;
     top: 0;
     left: 0;
     display: block;
-    margin-left: auto;
     margin-right: auto;
     width: 600px;
+    height: 600px;
+    object-fit: cover;
 }
 
 .ice-cream__image{
-    width: 100%;
+    padding-left: 0;
+    padding-right: 50px;
 }
 
 .ice-cream__image-product{
-    width: 300px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .ice-cream__image-box{
@@ -2390,6 +2400,7 @@ body {
     height: 100%;
     min-height: 1px;
     opacity: .3;
+    width: 100px;
 }
 
 .ice-cream__image-box.slick-current{

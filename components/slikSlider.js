@@ -28,5 +28,4 @@ export function sliderForProduct () {
         centerMode: true,
         focusOnSelect: true
     });
-    console.log("а это вторым")
 };

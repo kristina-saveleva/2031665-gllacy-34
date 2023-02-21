@@ -100,7 +100,7 @@ function addCardsOnPageFromLocalHost() {
 }
 
 function renderCards(cards = tenCardElements) {
-    for (let i = 0; i < cards.length; i++) {
+    for (let i = cards.length-1; i>=0; i--) {
         renderCard(cards[i]);
     }
 }
