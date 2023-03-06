@@ -2175,7 +2175,6 @@ body {
     width: 56px;
     height: 44px;
     background-color: #fcfcfc;
-    ;
     border: none;
     background-image: url("../images/close.svg");
     background-repeat: no-repeat;
@@ -2369,8 +2368,39 @@ body {
 
 .ice-cream{
     display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+}
+
+.ice-cream__images-information{
+    display: flex;
     flex-direction: column;
     width: 600px;
+}
+
+.ice-cream__information{
+    display: flex;
+    flex-direction: column;
+}
+
+.ice-cream__button{
+    inline-size: fit-content;
+    margin: 20px 0;
+}
+
+.ice-cream__price{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.ice-cream__title{
+    font-size: 35px;
+    line-height: 31px;
+    font-weight: 700;
+}
+
+.ice-cream__information{
+    margin: 0 60px;
 }
 
 .ice-cream__main-image{

@@ -68,17 +68,17 @@ function addProductOnPageFromLocalHost(name) {
         );
 };
 
-function renderProduct({ images }) {
-    const productElement = productTemplate.querySelector(".ice-cream__main-image-wrapper").cloneNode(true);
-    const productList = productTemplate.querySelector(".ice-cream__image").cloneNode(true);
-    productElement.querySelector(".ice-cream__main-image1").src = images[0];
-    productElement.querySelector(".ice-cream__main-image2").src = images[1];
-    productElement.querySelector(".ice-cream__main-image3").src = images[2];
-    productList.querySelector(".ice-cream__image1").src = images[0];
-    productList.querySelector(".ice-cream__image2").src = images[1];
-    productList.querySelector(".ice-cream__image3").src = images[2];
-    iceCreamImageContainer.prepend(productList);
-    iceCreamImageContainer.prepend(productElement);
+function renderProduct({ images, subtitle, price }) {
+    const productBox = productTemplate.querySelector('.ice-cream').cloneNode(true);
+    productBox.querySelector(".ice-cream__title").textContent = subtitle;
+    productBox.querySelector(".ice-cream__price").textContent = price;
+    productBox.querySelector(".ice-cream__main-image1").src = images[0];
+    productBox.querySelector(".ice-cream__main-image2").src = images[1];
+    productBox.querySelector(".ice-cream__main-image3").src = images[2];
+    productBox.querySelector(".ice-cream__image1").src = images[0];
+    productBox.querySelector(".ice-cream__image2").src = images[1];
+    productBox.querySelector(".ice-cream__image3").src = images[2];
+    iceCreamImageContainer.prepend(productBox);
     sliderForProduct();
 }
 
