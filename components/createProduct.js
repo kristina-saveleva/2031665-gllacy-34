@@ -1,5 +1,7 @@
 'use strict'
 import { sliderForProduct } from './slikSlider.js'
+import { buttonsCheck } from './basket.js'
+
 let initialImage = [
     {
         name: "raspberry", subtitle: "Сливочное мороженое с малиновым джемом", price: "310 ₽/кг", images: ["images/product/raspberries1.jpeg","images/product/raspberries2.jpeg","images/product/raspberries3.jpeg"],
@@ -80,6 +82,7 @@ function renderProduct({ images, subtitle, price }) {
     productBox.querySelector(".ice-cream__image3").src = images[2];
     iceCreamImageContainer.prepend(productBox);
     sliderForProduct();
+    buttonsCheck();
 }
 
 addProductOnPageFromLocalHost(parametr);

@@ -148,8 +148,7 @@
                 </div>
             </header>
             <main class="main-catalog">
-                <div class="inner-header">
-                    <h2 class="inner-header__title">Сливочное мороженое</h2>
+                <div class="inner-header inner-header-ice-cream">
                     <ul class="inner-header__breadcrumbs">
                         <li class="inner-header__breadcrumbs-item">
                             <a class="inner-header__breadcrumbs-link" href="index.html">Главная</a>
@@ -172,8 +171,34 @@
                         <div class="ice-cream__information">
                             <h2 class="ice-cream__title"></h2>
                             <b class="ice-cream__price catalog-products__card-price"></b>
+                            <div class="ice-cream__count">
+                                <div class="count">
+
+                                    <div class="count-controls">
+                                        <div class="count-box">
+                                            <input type="number" class="count-input" value="1">
+                                        </div>
+                                        <button class="count-arrow arrow-left" data-direction="plus">
+                                            <svg viewBox="0 0 7 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"
+                                                    />
+                                            </svg>
+                                        </button>
+                                        <button class="count-arrow arrow-right" data-direction="minus">
+                                            <svg viewBox="0 0 7 12"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.86474 11.1352C6.12443 11.3949 6.54549 11.3949 6.80519 11.1352C7.06489 10.8755 7.06489 10.4545 6.80519 10.1948L2.60391 5.99351L6.80523 1.79219C7.06492 1.53249 7.06492 1.11144 6.80522 0.85174C6.54553 0.592042 6.12447 0.592042 5.86477 0.85174L1.19606 5.52045C1.19511 5.52139 1.19417 5.52233 1.19322 5.52328C0.933522 5.78298 0.933522 6.20403 1.19322 6.46373L5.86474 11.1352Z"
+                                                    />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="button pink-button ice-cream__button" type="submit">
-                                <span>Заказать</span>
+                                <span>Добавить в корзину</span>
                             </button>
                         </div>
                         <div class="ice-cream__images-information">

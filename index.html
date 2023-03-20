@@ -110,8 +110,7 @@
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z">
                   </path>
                 </svg>
-                <span class="icon__link-count"> 2 </span>
-                <span>товара</span>
+                <span class="basket-count"></span>
               </a>
               <div class="popover popover-cart popover-cart-trash">
                 <div class="popover-content">
@@ -247,12 +246,12 @@
               <p class="products__catalog-subtitle">Сливочное мороженое с малиновым джемом</p>
               <div class="products__catalog-items">
                 <div class="products__catalog-price">310 ₽/кг</div>
-                <a href="#" class="products__catalog-trash">
-                  <svg xmlns="http://www.w3.org/2000/svg">
+                <button class="products__catalog-trash" data-id="Малинка">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="products__catalog-icon">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </li>
             <li>
@@ -263,12 +262,12 @@
               <p class="products__catalog-subtitle">Фисташковый пломбир с кусочками шоколада</p>
               <div class="products__catalog-items">
                 <div class="products__catalog-price">340 ₽/кг</div>
-                <a href="#" class="products__catalog-trash">
-                  <svg xmlns="http://www.w3.org/2000/svg">
+                <button class="products__catalog-trash" data-id="Фисташка">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="products__catalog-icon">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </li>
             <li>
@@ -279,12 +278,12 @@
               <p class="products__catalog-subtitle">Крем-брюле с черничным джемом</p>
               <div class="products__catalog-items">
                 <div class="products__catalog-price">330 ₽/кг</div>
-                <a href="#" class="products__catalog-trash">
-                  <svg xmlns="http://www.w3.org/2000/svg">
+                <button class="products__catalog-trash" data-id="Черника">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="products__catalog-icon">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </li>
             <li>
@@ -295,12 +294,12 @@
               <p class="products__catalog-subtitle">Ванильный пломбир со сладкой посыпкой</p>
               <div class="products__catalog-items">
                 <div class="products__catalog-price">320 ₽/кг</div>
-                <a href="#" class="products__catalog-trash">
-                  <svg xmlns="http://www.w3.org/2000/svg">
+                <button class="products__catalog-trash" data-id="Бабл-гам">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="products__catalog-icon">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </li>
           </ul>
@@ -427,6 +426,8 @@
             <button class="button pink-button">Форма обратной связи</button>
           </div>
         </div>
+
+
       </main>
     </div>
     <footer class="footer">
@@ -497,5 +498,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="module" src="./components/basket.js"></script>
   <script type="module" src="./components/slikSlider.js"></script>
+
 </html>

@@ -188,9 +188,21 @@ body {
     margin-top: 1px;
 }
 
+.basket-count{
+    background-color: #EA5454;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10px;
+    top: -8px;
+    right: 6px;
+    padding: 0 6px;
+}
+
 .icon__search {
     display: block;
-    padding: 3px;
+    padding: 2px;
 }
 
 .icon__search svg {
@@ -211,8 +223,8 @@ body {
 
 .icon__link svg {
     margin-right: 6px;
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 17px;
 }
 
 .icon__link--active,
@@ -761,16 +773,14 @@ body {
 }
 
 .products__catalog-trash {
-    position: absolute;
     display: block;
     background-color: #FF2F64;
     background-repeat: no-repeat;
-    padding: 6px;
-    width: 16px;
-    height: 16px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
     background-position: center;
     border-radius: 26px;
-    right: 0;
     fill: #fff;
     overflow: hidden;
     border: 2px solid #FF2F64;
@@ -779,6 +789,7 @@ body {
 .products__catalog-trash svg {
     width: 16px;
     height: 16px;
+    pointer-events: none;
 }
 
 .products__catalog-trash:hover {
@@ -1474,6 +1485,9 @@ body {
     padding-bottom: 3px;
 }
 
+.inner-header-ice-cream{
+    margin-bottom: 10px;
+}
 
 .inner-header__title {
     font-weight: 900;
@@ -2372,6 +2386,66 @@ body {
     margin-bottom: 60px;
 }
 
+.count{
+    display: flex;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.count-controls{
+    display: flex;
+}
+
+.count-input{
+    background-color: rgba(252, 252, 252, 0.4);
+    border: 1px solid #FF2F64;
+    outline: 2px solid rgba(252, 252, 252, 0.4);
+    text-align: center;
+    height: 60px;
+    padding: 0 24px;
+    font-size: 28px;
+    width: 50px;
+}
+
+.count-arrow{
+    background-color: transparent;
+    border: none;
+    margin: -15px 27px;
+}
+
+.count-arrow svg{
+    fill: #FF2F64;
+    width: 14px;
+    margin-left: -38px;
+    cursor: pointer;
+    margin-bottom: 62px;
+}
+
+.count-arrow svg:hover{
+    opacity: .2;
+}
+
+.count-arrow svg:active{
+    opacity: .8;
+}
+
+.arrow-left{
+    transform: rotate(90deg);
+    margin-left: -11px;
+}
+
+.arrow-right{
+    transform: rotate(270deg);
+}
+
 .ice-cream__images-information{
     display: flex;
     flex-direction: column;
@@ -2390,7 +2464,7 @@ body {
 
 .ice-cream__price{
     font-size: 25px;
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
 
 .ice-cream__title{
@@ -2436,6 +2510,11 @@ body {
 .ice-cream__image-box.slick-current{
     opacity: 1;
 }
+
+
+
+
+
 
 @-webkit-keyframes shake {
   0% {

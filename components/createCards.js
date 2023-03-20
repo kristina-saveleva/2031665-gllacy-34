@@ -116,6 +116,9 @@ function renderCard({ name, url, subtitle, price, link }) {
     placeElement.querySelector(".catalog-products__card-price").textContent = price;
     linkUrl.setAttribute("href", 'product.html?product=' + link);
     placesContainer.prepend(placeElement);
+
+    let btn = document.querySelector('.catalog-products__trash');
+    btn.dataset.id = name;
 }
 
 addCardsOnPageFromLocalHost();
